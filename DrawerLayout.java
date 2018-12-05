@@ -35,10 +35,10 @@ public class DrawerLayout extends RelativeLayout implements View.OnTouchListener
     public void init(){
         if(getGravity()==Gravity.RIGHT) direction = -1;
         if(direction==-1) {
-            addView(inflate(getContext(), R.layout.rd, null));
+            addView(inflate(getContext(), R.layout.right_drawer_layout, null));
             drawerWidth = getResources().getDimensionPixelSize(R.dimen.r_drawer_width);
         } else {
-            addView(inflate(getContext(), R.layout.d, null));
+            addView(inflate(getContext(), R.layout.drawer_layout, null));
             drawerWidth = getResources().getDimensionPixelSize(R.dimen.drawer_width);
         }
         setOnTouchListener(this);
