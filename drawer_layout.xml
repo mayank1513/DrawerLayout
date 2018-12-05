@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        android:layout_width="@dimen/drawerWidth"
+        android:layout_height="@dimen/headerHeight">
+        <!--edit header as per your requirement-->
+        <ImageView android:id="@+id/arte"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:foreground="@drawable/c_grad"
+            android:foregroundTint="@color/statusBarColor"
+            android:background="@color/statusBarColor"
+            android:src="@drawable/sp" />
+        <Button
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="serif"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:text="His Divine Grace A. C. Bhakti Vedanta Swami Prabhupada"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="@dimen/drawerWidth"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/headerHeight">
+        <!-- make your drawer items here -->
+    </FrameLayout>
+</FrameLayout>
